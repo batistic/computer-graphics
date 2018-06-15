@@ -44,7 +44,7 @@ public class SkeletonNode extends InnerNode {
      * @param triangleMeshNodeFactory Factory for a triangle mesh node.
      */
     public SkeletonNode(Skeleton skeleton, ITriangleMeshFactory triangleMeshFactory, ITriangleMeshNodeFactory triangleMeshNodeFactory) {
-        boneMesh = triangleMeshFactory.createMesh();
+        boneMesh = triangleMeshFactory.createTriangleMesh();
         createBone(boneMesh);
         this.skeleton = skeleton;
         for (Iterator<Bone> it = skeleton.getBonesIterator(); it.hasNext(); ) {

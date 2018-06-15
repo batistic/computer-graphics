@@ -36,7 +36,6 @@ public class Bone {
     protected final Bone parent;
 
     /**
-     * List of child bones
      */
     private List<Bone> children = new ArrayList<Bone>();
 
